@@ -1,0 +1,55 @@
+/* main css for design-principles html*/
+body {
+    display: block;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+}
+header {
+    display: block;
+    color: white;
+    background-color: rgb(0,76,118);
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+main{
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+section{
+    border: 1px solid #2e497d;
+    border-radius: 6px;
+    padding: 1px;
+}
+h3{
+    margin: 0;
+    color: white;
+    background-color: rgb(0,76,118);  
+    border: 1px solid #2e497d;
+    border-radius: 6px 6px 0px 0px;
+    padding: 5px;
+}
+p {
+    padding: 5px;
+}
+footer {
+  display: block;
+  color: white;
+  background-color: rgb(0,76,118);
+  justify-content: center;
+  text-align: center; 
+  padding: 5px;
+}
+img{
+    display: block;
+    max-width: 90%;
+    border: 1px solid #2e497d;
+    border-radius: 6px 6px 6px 6px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
