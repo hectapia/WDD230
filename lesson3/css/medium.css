@@ -1,0 +1,42 @@
+
+@media only screen and (min-width: 37.5em) {
+	h1 {
+		font-size: 1.5rem;
+	}
+
+
+	nav ul { display: flex; }
+	nav ul li { flex: 1 1 auto; } 
+
+	nav a {
+		font-size: 1rem;
+	}
+	nav a:hover {
+		background-color: #027e21;
+	    color: #ffff; 
+	}
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+	article:nth-child(3) {
+		grid-column: span 2;
+	}
+	div {
+		display: grid;
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+	article:nth-child(3) {
+		grid-column: span 1;
+		font-size: 1.1rem;
+	}
+		main picture {
+		display: block;
+	}
+	main picture img {
+		width: 100%;
+		height: auto;
+	}
+
+}
+
