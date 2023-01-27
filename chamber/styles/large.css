@@ -1,0 +1,99 @@
+/* Larger viewports */
+@media only screen and (min-width: 65rem) {
+	.logo img {
+		width: 7.8rem;
+	}
+	.headings h1 {
+		font-size: 1.8rem;
+		margin: 0;
+	}
+	.m {
+		letter-spacing: 1.5pt; 
+		font-size: 0.9rem;
+	}
+	.social {
+		order: 2;
+	}
+	.menu {
+		order: 1;
+	}
+	em {
+		font-size: 14px;
+	}	
+}
+
+
+/* Media Query for Large + views */
+@media only screen and (min-width: 65rem) {
+  .navigation {
+    margin-top: 30px;
+  }  
+
+  nav ul li a {
+      padding: .5rem 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 65rem) {
+    .home-hero {
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-template-rows: minmax(250px, auto) minmax(250px, auto);
+     grid-auto-rows: minmax(150px, auto);
+   }
+       
+   .event {
+       grid-column: 1 / 2;
+       grid-row: 1 / 2;
+     }
+   .mainHero {
+     grid-column: 2 / 4 ;
+     grid-row: 1 / 3;
+   }
+   .spotlights {
+     grid-column: 4 / 5;
+     grid-row: 1 / 4;
+    /* grid-template-columns: 100%;
+     grid-template-rows: 200px;*/
+     display: flex;
+	  flex-direction: column;
+	  /*justify-content: space-between;*/
+   }
+   .spot-3 {
+    display: flex;
+    margin: 5px;
+    height: 100%;
+    }
+   .spot-3 > p{
+    display: flex;
+    color: #fff;
+    }
+   .weather {
+       grid-column: 1 / 2;
+       grid-row: 2 / 3;
+     }
+   .join {
+       grid-column: 1 / 2;
+       grid-row: 3 / 4;
+     }  
+   .news {
+       grid-column: 2 / 4;
+       grid-row: 3 / 4;
+     }  
+    .footer-site-name h2 {
+      display: flex;
+      margin-top: 1px ;
+      margin-bottom: 1px;
+      justify-content: left;
+    }
+    .workInfo {
+      font-size: 0.9rem;
+    }
+	  .workInfo, .infoChamber {
+		padding: 1px ;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+    }
+ }
+ 

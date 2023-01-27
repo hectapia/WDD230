@@ -1,0 +1,113 @@
+/* Medium viewports */
+@media only screen and (min-width: 51rem) {
+	.logo img {
+		width: 7.8rem;
+	}
+
+	.headings h1 {
+		font-size: 2rem;
+		margin: 0;
+	}
+
+	.m {
+		letter-spacing: 1.5pt; 
+		font-size: 0.9rem;
+	}
+
+	.change .social{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+	em {
+		font-size: 0.6rem;
+	}
+
+	nav button {display: none;}
+    
+	nav ul#primaryNav {
+		display: flex;
+		margin-left: 2vw;
+		border-left: 1px solid rgba(0,0,0,0.3);
+	}
+
+	nav ul li a {
+	   border: none;
+	   border-right: 1px solid rgba(0,0,0,0.3);
+	}
+}
+
+
+
+
+
+@media only screen and (min-width: 51rem) {
+	.home-hero {
+	  grid-template-columns: 1fr 1fr 1fr;
+	}
+	
+	.mainHero {
+	  grid-column: 1 / 4;
+	  grid-row: 1 / 2;
+	}
+	.news {
+	  grid-column: 1 / 4;
+	  grid-row: 2 / 3;
+	}
+
+
+	.spotlights {
+	  grid-column: 1 / 4;
+	  grid-row: 3 / 4;
+	  display: grid;
+	  grid-template-columns: 50% 50%;
+	  grid-template-rows: 250px;
+	  
+	}
+	.spot-1 {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+	}
+	.spot-1 {
+		grid-column: 2 / 3;
+		grid-row: 1 / 2;
+	}
+
+	.join {
+		display: block;
+		grid-column: 1 / 4;
+		grid-row: 4 / 5;
+	}  	
+	.event {
+		grid-column: 1 / 3;
+		grid-row: 5 / 6;
+	}
+	.weather {
+		grid-column: 3 / 4;
+		grid-row: 5 / 6;
+	}
+
+    footer > section  {
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+	.workInfo {
+		font-size: 0.7rem;
+	}
+
+	
+	.workInfo p.wi-1.wi-2.wi-3.ws-2 {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+    }
+
+  }
