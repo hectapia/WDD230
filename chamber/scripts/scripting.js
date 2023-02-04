@@ -20,7 +20,7 @@ x.onclick = toggleMenu;
 
 
 
-datefield.innerHTML = `<em>${fulldateUK}</em>`;
+//datefield.innerHTML = `<em>${fulldateUK}</em>`;
 //datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 
 
