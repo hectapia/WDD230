@@ -34,7 +34,7 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {	dateStyle: "full" }).forma
 datefield.innerHTML = `<em>${fulldateUK}</em>`;
   
 if (meetday == 6) { 
-    chambermeet.innerHTML = `<p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>`;
+    datefield.innerHTML = `<p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>`;
 }
 
 
