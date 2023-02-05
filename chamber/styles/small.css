@@ -51,7 +51,7 @@ header {
 
 .m {
 	letter-spacing: 1pt;
-	color: forestgreen;
+	color: #02476d;
 	font-weight: 700;
 	font-size: 0.8rem;
 }
@@ -81,6 +81,13 @@ header {
 	order: 2;
 }
 
+.banner {
+	border: 1px solid #858585;
+	background-color: forestgreen;
+	color: white;
+	font-weight: 900;
+	text-align:center;
+}
 .currentdate {
 	border: 1px solid #858585;
 	background-color: rgba(133, 133, 133, 0.219);
@@ -94,10 +101,9 @@ header {
 
  .currentdate em {
   	margin: 0 auto;
-	
  }
 
-
+ /*.banner {display: none;}*/
 
 /* Small/Phone View ***************/
 nav button { 
