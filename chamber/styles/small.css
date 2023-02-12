@@ -176,10 +176,40 @@ nav ul.open {display: block;
   }
   
   .mainHero {
-	background-position: center;
-	color: #fff;
-  }
-  
+	/*margin: 10px auto;*/
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mainHero img {
+	width: 100%;
+	height: 100%;
+}
+
+.mainHero h2, h3 {
+	font-size: 1.5rem;
+	color: #02476d;
+	margin: 2px;
+}
+.h2_hero {
+	position: absolute;
+	top: 25px;
+	left: 50px;
+}
+
+.h3_hero {
+	position: absolute;
+	bottom: 25px;
+	right: 50px;
+	background: radial-gradient(#eee, #4567aa);
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius: 10px;
+	padding: 1rem;
+	box-shadow: 0 0 30px #333;
+	opacity: 0.8;
+}
+
   .weather {
 	color: #fff;
 	background-position: center;

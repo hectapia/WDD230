@@ -22,7 +22,7 @@
     <header>
       <div class="header">
         <div class="logo">
-          <img src="images/canacosugarcane.png" alt="Page logo">
+          <img src="images/canacosugarcane.webp" alt="Page logo">
           <section class="headings">
             <h1>VitaChamCo</h1>
             <q class="m">Chamber of Commerce</q>
@@ -59,7 +59,17 @@
         <div class="home-hero">
   
           <div class="mainHero">
-            <p>Hero with site name and call to action</p>
+            <picture>
+              <source srcset="images/hero-large.jpg" media="(min-width: 960px)">
+              <source srcset="images/hero-medium.jpg" media="(min-width: 680px) and (max-width: 959px)">
+              <img id="hero-img" src="images/hero-small.jpg" alt="People sitting around a table">
+          </picture>
+           <Div class="h2_hero">
+            <h2>Welcome</h2>
+           </Div>
+           <Div class="h3_hero">
+            <h3>Join the Chamber</h2>
+           </Div>
           </div>
           
           <div class="event">
@@ -68,6 +78,10 @@
   
           <div class="weather">
             <p>Weather</p>
+            <p><span class="temperature">91.4</span>&#8451;</p>
+            <p>Weather aspect: Cloudy</p>
+            <p>Wind speed: <span class="windSpeed">5.55</span>mi/h</p>
+            <p>Wind chill: <span class="windChill"></span></p>
           </div>
   
           <div class="news">
@@ -121,5 +135,6 @@
   </footer>
     
     <script src="scripts/scripting.js"></script>
+    <script src="scripts/windchill.js"></script>
   </body>
 </html>

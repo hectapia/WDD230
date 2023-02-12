@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+        max-width: 820px;
+        margin: 0 auto;
+        border: 1px solid rgba(0,0,0,1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            text-shadow: .25rem .25rem .75rem #333;
+        }
+
+        .mainHero {
+            /*margin: 10px auto;*/
+            position: relative;
+            background-repeat: no-repeat;
+	        background-size: cover;
+            border: 5px solid rgb(122, 2, 8);
+        }
+
+        .mainHero img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .h2_hero {
+            position: absolute;
+            top: 25px;
+            left: 50px;
+        }
+
+        .h3_hero {
+            position: absolute;
+            bottom: 25px;
+            right: 50px;
+            background: radial-gradient(#eee, #4567aa);
+            border: 1px solid rgba(0,0,0,.1);
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 0 30px #333;
+            opacity: 0.8;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Overlay Example</h1>
+        <div class="mainHero">
+            <picture>
+                <source srcset="images/hero-large.jpg" media="(min-width: 960px)">
+                <source srcset="images/hero-medium.jpg" media="(min-width: 680px) and (max-width: 959px)">
+                <img id="hero-img" src="images/hero-small.jpg" alt="People sitting around a table">
+            </picture>
+            <section class="h2_hero">
+                <h2>Welcome</h2>
+            </section>
+            <section class="h3_hero">
+                <h3>Join the Chamber</h2>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
