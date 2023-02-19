@@ -33,8 +33,8 @@
             <nav>
               <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
               <ul id="primaryNav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="discover.html">Discovery</a></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li class="active"><a href="#">Discovery</a></li>
                   <li><a href="#">Directory</a></li>
                   <li><a href="#">Join</a></li>    
                   <li><a href="#">Contact</a></li>  
@@ -51,61 +51,19 @@
           </div>
         </div>
       </div>
-      <div class="currentdate date"></div>
+      <div class="currentdate date">
+        <p><span class="label">Number of Visits: </span><span id="visits"></span></p> 
+      </div>
     </header>
     
-    <main>
-      <div class="mainContainer">
-        <div class="home-hero">
-  
-          <div class="mainHero">
-            <picture>
-              <source srcset="images/hero-large.jpg" media="(min-width: 960px)">
-              <source srcset="images/hero-medium.jpg" media="(min-width: 680px) and (max-width: 959px)">
-              <img id="hero-img" src="images/hero-small.jpg" alt="People sitting around a table">
-          </picture>
-           <Div class="h2_hero">
-            <h2>Welcome</h2>
-           </Div>
-           <Div class="h3_hero">
-            <h3>Join the Chamber</h2>
-           </Div>
-          </div>
-          
-          <div class="event">
-            <p>Event</p>
-          </div>
-  
-          <div class="weather">
-            <p>Weather</p>
-            <p><span class="temperature">91.4</span>&#8451;</p>
-            <p>Weather aspect: Cloudy</p>
-            <p>Wind speed: <span class="windSpeed">5.55</span>mi/h</p>
-            <p>Wind chill: <span class="windChill"></span></p>
-          </div>
-  
-          <div class="news">
-            <p>News</p>
-          </div>
-          
-          <div class="spotlights">
-            <div class="spot-1">
-              <p>Spotlight one</p>
-            </div>
-            <div class="spot-2">
-              <p>Spotlight two</p>
-            </div>
-            <div class="spot-3">
-              <p>Spotlight three</p>
-            </div>
-          </div>
-  
-          <div class="join">
-            <p>join us. </p>   
-          </div>
-  
-        </div>
-      </div>
+    <main class="discover">
+      <h1>Progressive Loading (images)</h1>
+      <picture><img src="https://via.placeholder.com/300x400" alt="via.placeholder.com" data-src="https://picsum.photos/300/400" alt="picsum.photos"></picture>
+      <picture><img src="https://via.placeholder.com/300x400" alt="via.placeholder.com" data-src="https://placebear.com/300/400" alt="placebear.com"></picture>
+      <picture><img src="https://via.placeholder.com/300x400" alt="via.placeholder.com" data-src="https://loremflickr.com/300/400" alt="loremflickr"></picture>
+      <picture><img src="https://via.placeholder.com/300x400" alt="via.placeholder.com" data-src="https://placebeard.it/300x400" alt="placebeard.it"></picture>
+      <picture><img src="https://via.placeholder.com/300x400" alt="via.placeholder.com" data-src="https://baconmockup.com/300/400/" alt="baconmockup.com"></picture>
+      <picture><img src="https://via.placeholder.com/300x400" alt="via.placeholder.com" data-src="https://placekitten.com/300/400" alt="placekitten.com"></picture>
     </main>  
     
   <footer>
@@ -135,6 +93,6 @@
   </footer>
     
     <script src="scripts/scripting.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/imajehandling.js"></script>
   </body>
 </html>
