@@ -1,9 +1,8 @@
 
-    // https://hectapia.github.io/wdd230/superheroes.xml
     let xmlContent = '';
     let headerInfo = document.getElementById('heroInfo');
     let sectionInfo = document.getElementById('members');
-    fetch('xml/superheroes.xml').then((response)=> {
+    fetch('https://hectapia.github.io/wdd230/lesson09/JsonVsXML/xmlfiles/superheroes.xml').then((response)=> {
         response.text().then((xml)=>{
             xmlContent = xml;
 
@@ -25,10 +24,8 @@
                 parag.innerText +=`Secret Base: ${XmlNode.children[3].innerHTML}`;
                 headerInfo.appendChild(parag);
 
-
             })
-            var x;
-            x = 0;
+
             members.forEach(XmlNode => {   
 
                 let articl= document.createElement('article');
@@ -41,21 +38,26 @@
                 let parag3 = document.createElement('p');
                 let mylist = document.createElement('ul');
 
-                parag1.innerText = `${x} Secret identity: ${XmlNode.children[2].innerHTML}`;
+                parag1.innerText = `Secret identity: ${XmlNode.children[2].innerHTML}`;
                 parag2.innerText = `Age: ${XmlNode.children[1].innerHTML}`;
                 parag3.innerText = 'Superpowers:';
-                x += 1;
 
                  var item, listItem;
                  item = 0;
                  
-                 superPowers.forEach(XmlNodes => {                      
+                superPowers.forEach(XmlNodes => {                      
                     listItem  = document.createElement('li');
-                    listItem.innerText = `${item} ${XmlNodes.children[item].innerHTML}`;
+                    listItem.innerText = `${XmlNodes.children[item].innerHTML}`;
                     mylist.appendChild(listItem);
                     item += 1;
                 });
 
+                //for(var i=0;i<superPowers.length;i++)
+                //{
+                //    listItem  = document.createElement('li');
+                //    listItem.innerText=`${superPowers.children[i].innerHTML}`;
+                //    mylist.appendChild(listItem);
+                //}
 
                 articl.appendChild(parag1);
                 articl.appendChild(parag2);
@@ -64,9 +66,7 @@
 
                 sectionInfo.appendChild(articl);
 
-
             })
-
 
         })
     })                   

@@ -1,6 +1,6 @@
 async function populate() {
 
-    const requestURL = 'json/books.json';
+    const requestURL = 'https://hectapia.github.io/wdd230/lesson09/JsonVsXML/jsonfiles/books.json';
     const request = new Request(requestURL);
 
     const response = await fetch(request);
@@ -24,7 +24,7 @@ async function populate() {
 
       td1.textContent = book.author;
       td2.textContent = book.title ;
-      td3.textContent = book.price;
+      td3.textContent = `$${book.price}`;
       td4.textContent = book.description;
 
 

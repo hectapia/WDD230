@@ -1,9 +1,9 @@
 let xmlContent = '';
 let tableBooks = document.getElementById('books');
-fetch('xml/books.xml').then((response)=> {
+fetch('https://hectapia.github.io/wdd230/lesson09/JsonVsXML/xmlfiles/books.xml').then((response)=> {
     response.text().then((xml)=>{
         xmlContent = xml;
-                                    // https://hectapia.github.io/wdd230/books.xml
+                                
         let parser = new DOMParser();
         let xmlDOM = parser.parseFromString(xmlContent, 'application/xml');
         let books = xmlDOM.querySelectorAll('book');
@@ -12,7 +12,7 @@ fetch('xml/books.xml').then((response)=> {
 
             let row = document.createElement('tr');
 
-            //author
+            // author
             let td = document.createElement('td');
             td.innerText = bookXmlNode.children[0].innerHTML;
             row.appendChild(td);
@@ -22,12 +22,12 @@ fetch('xml/books.xml').then((response)=> {
             td.innerText = bookXmlNode.children[1].innerHTML;
             row.appendChild(td);
             
-            //price
+            // price
             td = document.createElement('td');
-            td.innerText = '$ ' + bookXmlNode.children[3].innerHTML;
+            td.innerText = '$' + bookXmlNode.children[3].innerHTML;
             row.appendChild(td);
 
-            //description
+            // description
             td = document.createElement('td');
             td.innerText = bookXmlNode.children[5].innerHTML;
             row.appendChild(td);
