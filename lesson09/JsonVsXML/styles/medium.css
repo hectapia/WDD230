@@ -1,0 +1,10 @@
+@media only screen and (min-width: 28.5em) {
+  body {
+    width: 600px;
+    font-size: 1.3em;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+}
