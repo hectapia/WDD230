@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/w3schools31.css">
+    <meta content="This page shows content that belongs to w3schools just for educational purpose">
+    <style>
+        .credits{
+            position: fixed;
+            bottom: 2px;
+            margin: 0 auto;
+            padding: 10px;
+            width: 60rem;
+            background-color: white;
+            border: 3px solid #73AD21;
+        }
+        .mainheading {
+            margin: 10px; padding: 10px;
+        }
+    </style>
+</head>
+<body>
+  <p class=".nextprev a .w3-left credits" >Taken from <a href="https://www.w3schools.com/js/js_json_xml.asp" ><em>www.w3schools.com/js/js_json_xml</em></a></p>           
+  <h1>JSON <span class="color_h1">vs XML</span></h1>
+
+  <hr>
+  <p class="intro">Both JSON and XML can be used to receive data from a web server.</p>
+  <hr>
+  <p>The following JSON and XML examples both define an employees object, with an array of 3 employees:</p>
+  <div class="w3-example">
+  <h3>JSON Example</h3>
+  <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+  </span>{<span class="jsstringcolor" style="color:brown">"employees"</span>:[<br><span class="jsnumbercolor" style="color:red">
+  </span>&nbsp;&nbsp;{ <span class="jsstringcolor" style="color:brown">"firstName"</span>:<span class="jsstringcolor" style="color:brown">"John"</span>, <span class="jsstringcolor" style="color:brown">"lastName"</span>:<span class="jsstringcolor" style="color:brown">"Doe"</span> },<br><span class="jsnumbercolor" style="color:red">
+  </span>&nbsp;&nbsp;{ <span class="jsstringcolor" style="color:brown">"firstName"</span>:<span class="jsstringcolor" style="color:brown">"Anna"</span>, <span class="jsstringcolor" style="color:brown">"lastName"</span>:<span class="jsstringcolor" style="color:brown">"Smith"</span> },<br><span class="jsnumbercolor" style="color:red">
+  </span>&nbsp;&nbsp;{ <span class="jsstringcolor" style="color:brown">"firstName"</span>:<span class="jsstringcolor" style="color:brown">"Peter"</span>, <span class="jsstringcolor" style="color:brown">"lastName"</span>:<span class="jsstringcolor" style="color:brown">"Jones"</span> }<br><span class="jsnumbercolor" style="color:red">
+  </span>]}<br><span class="jsnumbercolor" style="color:red">
+  </span> </span></div>
+  </div>
+  
+  <div class="w3-example">
+  <h3>XML Example</h3>
+  <div class="w3-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>employees<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>employee<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+  &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>firstName<span class="tagcolor" style="color:mediumblue">&gt;</span></span>John<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/firstName<span class="tagcolor" style="color:mediumblue">&gt;</span></span> <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>lastName<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Doe<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/lastName<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+  &nbsp;&nbsp;<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/employee<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+  &nbsp;&nbsp;<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>employee<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>firstName<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Anna<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/firstName<span class="tagcolor" style="color:mediumblue">&gt;</span></span> <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>lastName<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Smith<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/lastName<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/employee<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+  &nbsp;&nbsp;<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>employee<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>firstName<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Peter<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/firstName<span class="tagcolor" style="color:mediumblue">&gt;</span></span> <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>lastName<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Jones<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/lastName<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/employee<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/employees<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+   </div>
+  </div>
+  
+  <hr>
+  
+  <h2>&nbsp;JSON is Like XML Because</h2>
+  <ul>
+    <li>Both JSON and XML are "self describing" (human readable)</li>
+    <li>Both JSON and XML are hierarchical (values within values)</li>
+    <li>Both JSON and XML can be parsed and used by lots of programming languages</li>
+    <li>Both JSON and XML can be fetched with an XMLHttpRequest </li>
+  </ul>
+  
+  <hr>
+  
+  <h2>JSON is Unlike XML Because</h2>
+  <ul>
+    <li>JSON doesn't use end tag</li>
+    <li>JSON is shorter</li>
+    <li>JSON is quicker to read and write</li>
+    <li>JSON can use arrays</li>
+  </ul>
+  <p>The biggest difference is:</p>
+  <p>&nbsp;XML has to be parsed with an XML parser. JSON can be parsed by a 
+  standard JavaScript function. </p>
+  
+  <hr>
+  
+  <h2>Why JSON is Better Than XML</h2>
+  <div class="w3-panel w3-note">
+  <p>XML is much more difficult to parse than JSON.<br>
+  JSON is parsed into a ready-to-use JavaScript object.</p>
+  </div>
+  
+  <p>For AJAX applications, JSON is faster and easier than XML:</p>
+  <p>Using XML</p>
+  <ul>
+    <li>Fetch an XML document</li>
+    <li>Use the XML DOM to loop through the document</li>
+    <li>Extract values and store in variables</li>
+  </ul>
+  <p>Using JSON</p>
+  <ul>
+    <li>Fetch a JSON string</li>
+    <li>JSON.Parse the JSON string</li>
+  </ul>
+  <br>
+  <div id="mypagediv2" style="position:relative;text-align:center;"></div>
+  <br>
+  
+  </div>
+</body>
+</html>

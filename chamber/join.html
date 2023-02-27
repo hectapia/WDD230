@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Villahermosa Tabasco Chamber of Commerce</title>
+  <link rel="shortcut icon" href="../chamber/images/canacosugarcane.ico">
+  <meta name="description"
+    content="Assignment 4, portal for Hector Olivares Tapia in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link href="styles/small.css" rel="stylesheet">
+  <link href="styles/media.css" rel="stylesheet">
+  <link href="styles/large.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="banner"> </div>
+  <header>
+    <div class="header">
+      <div class="logo">
+        <img src="images/canacosugarcane.webp" alt="Page logo">
+        <section class="headings">
+          <h1>VitaChamCo</h1>
+          <q class="m">Chamber of Commerce</q>
+        </section>
+      </div>
+      <div class="change">
+        <div class="menu">
+          <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="discover.html">Discovery</a></li>
+              <li><a href="#">Directory</a></li>
+              <li class="active"><a href="#">Join</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="social"> &nbsp;
+          <a href="https://facebook.com">
+            <img src="images/facebookw.png" alt="facebook page icon">
+          </a> &nbsp;
+          <a href="https://linkedin.com">
+            <img src="images/linkedinw.png" alt="linkedin page icon">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="currentdate date">
+      <p><span class="label">Number of Visits: </span><span id="visits"></span></p>
+    </div>
+  </header>
+
+  <main class="joinContainer">
+    <h1>Sign up to join</h1>
+    <div>
+      <div class="membership">
+        <ul>
+          <h2>Membership Levels</h2>
+          <li>
+            <h3>NP Membership</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti alias numquam adipisci dolores autem
+              quod similique quos sed quo, non odit error quis et rerum rem itaque maiores fugiat natus!
+            </p>
+          </li>
+          <li>
+            <h3>Bronze Membership</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere fugit amet eos temporibus quo. Accusamus
+              dolorem perspiciatis quaerat placeat, labore eveniet est distinctio corporis dolor minima ratione, illo
+              laborum facilis!
+            </p>
+          </li>
+          <li>
+            <h3>Silver Membership</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dignissimos, nisi fuga ipsam voluptatibus
+              praesentium ullam sequi eveniet aspernatur, fugiat recusandae, quis quam qui obcaecati ipsum cupiditate
+              nam ex minima?
+            </p>
+          </li>
+          <li>
+            <h3>Gold Membership</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quia rem itaque voluptas quam!
+              Necessitatibus et, minima, ut velit praesentium est nobis rerum tempore iure aut reiciendis voluptas animi
+              quia..
+            </p>
+          </li>
+        </ul>
+      </div>
+      <form id="joinUs" name="joinUs" action="#" method="get">
+        <label for="fname">First name</label><br/>
+        <input type="text" id="fname" name="fname" autofocus required/><br/><br/>
+        <label for="lname">Last name:</label><br/>
+        <input type="text" id="lname" name="lname" required/><br/><br/>
+
+        <label for="bizname">biziness position title</label><br />
+        <input type="text" id="bizname" name="bizname" pattern="[a-zA-Z -]{15,}"/>
+        <small>Accepts alpha characters,
+          hyphens, with at least 15
+          characters.
+        </small><br /><br/>
+
+        <label for="email">Email</label><br/>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required/><br/><br/>
+
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" name="phone" required/><br/><br />
+
+        <label for="biztitle">biziness name:</label>
+        <input type="tel" id="biztitle" name="biztitle" required/><br/><br/>
+
+        <label for="membership">Choose membership level:</label>
+        <select name="membership" id="membership">
+          <option value="" disabled selected>Select your option</option>
+          <option value="np">NP Membership</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select><br /><br />
+
+        <label for="bizdesc">biziness Description:</label>
+        <textarea id="bizdesc" name="bizdesc" rows="4" placeholder="Type your description here"></textarea><br/><br/>
+        <input type="hidden" id="dateTime" name="dateTime" value=""/>
+        <input class="submit" type="submit" value="Submit"/>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <section class="infoChamber">
+      <div class="logoFooter">
+        <img src="images/canacosugarcane.png" alt="Page logo">
+      </div>
+      <div class="footer-site-name">
+        <h2>VitaChamCo</h2>
+        <q class="m">Villahermosa Tabasco <br> Chamber of Commerce</q>
+      </div>
+      <div class="phone">
+        <a href="">info@canacocardenas.org</a>
+        <p>937 322 7802</p>
+        <a href="#">Location Map</a>
+      </div>
+    </section>
+    <hr>
+    <div class="workInfo">
+      <p> &copy; <span id="currentyear"></span>
+        <span> VitaChamCo </span>
+        <span> Hector Olivares Tapia </span>
+        <span> WDD 230 Project</span>
+        <span id="lastupdated"></span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="scripts/scripting.js"></script>
+  <script src="scripts/imajehandling.js"></script>
+</body>
+
+</html>
