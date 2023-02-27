@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML Tree</title>
+    <link rel="stylesheet" href="styles/w3schools31.css">
+    <meta content="This page shows content that belongs to w3schools just for educational purpose">
+    <style>
+        .credits{
+            position: fixed;
+            bottom: 2px;
+            margin: 0 auto;
+            padding: 10px;
+            width: 60rem;
+            background-color: white;
+            border: 3px solid #73AD21;
+        }
+        .mainheading {
+            margin: 10px; padding: 10px;
+        }
+    </style>
+</head>
+<body>
+  <p class=".nextprev a .w3-left credits" >Taken from <a href="https://www.w3schools.com/xml/xml_tree.asp" ><em>www.w3schools.com/xml/xml_tree</em></a></p>     
+  <h1 class="mainheading">XML Tree</span></h1>
+  <hr>
+
+<p class="intro">XML documents form a tree structure that starts at "the root" and branches to "the leaves".</p>
+<hr>
+
+<h2>The XML Tree Structure</h2>
+<div class="w3-section w3-white w3-center">
+<img src="https://www.w3schools.com/xml/nodetree.gif" alt="DOM node tree" class="w3-image">
+</div>
+<hr>
+
+<h2>An Example XML Document</h2>
+<p>The image above represents books in this XML:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>?xml<span class="attributecolor" style="color:red"> version<span class="attributevaluecolor" style="color:mediumblue">="1.0"</span> encoding<span class="attributevaluecolor" style="color:mediumblue">="UTF-8<strong>"</strong></span>?</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>bookstore<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>book<span class="attributecolor" style="color:red"> category<span class="attributevaluecolor" style="color:mediumblue">="cooking"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="attributecolor" style="color:red"> lang<span class="attributevaluecolor" style="color:mediumblue">="en"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Everyday Italian<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>author<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Giada De Laurentiis<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/author<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>year<span class="tagcolor" style="color:mediumblue">&gt;</span></span>2005<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/year<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>price<span class="tagcolor" style="color:mediumblue">&gt;</span></span>30.00<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/price<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/book<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>book<span class="attributecolor" style="color:red"> category<span class="attributevaluecolor" style="color:mediumblue">="children"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="attributecolor" style="color:red"> lang<span class="attributevaluecolor" style="color:mediumblue">="en"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Harry Potter<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>author<span class="tagcolor" style="color:mediumblue">&gt;</span></span>J K. Rowling<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/author<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>year<span class="tagcolor" style="color:mediumblue">&gt;</span></span>2005<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/year<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>price<span class="tagcolor" style="color:mediumblue">&gt;</span></span>29.99<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/price<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/book<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>book<span class="attributecolor" style="color:red"> category<span class="attributevaluecolor" style="color:mediumblue">="web"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="attributecolor" style="color:red"> lang<span class="attributevaluecolor" style="color:mediumblue">="en"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Learning XML<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>author<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Erik T. Ray<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/author<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>year<span class="tagcolor" style="color:mediumblue">&gt;</span></span>2003<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/year<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;&nbsp;&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>price<span class="tagcolor" style="color:mediumblue">&gt;</span></span>39.95<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/price<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/book<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/bookstore<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+</div></div>
+<hr>
+<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+  <!-- MidContent -->
+  <!-- <p class="adtext">Advertisement</p> -->
+  
+    <div id="adngin-mid_content-0" style="min-width: 970px; min-height: 25px; display: flex; justify-content: space-around; align-items: center; width: 970px; flex-direction: row;">
+        <div id="adngin-mid_content-0-adaptive-group-0-placement-0" data-google-query-id="CJGKs9S9tP0CFfqQ0QQdBhkJGg">
+            <div id="sn_ad_label_adngin-mid_content-0-adaptive-group-0-placement-0" class="sn_ad_label" style="color:#000000;font-size:12px;margin:0;text-align:center;">
+             
+            </div>
+            <div id="google_ads_iframe_/22152718,16833175/sws-hb//w3schools.com//mid_content_0__container__" style="border: 0pt none; display: inline-block; width: 970px; height: 25px;">
+            </div>
+        </div>
+    </div>
+    
+  </div>
+<hr>
+
+<h2>XML Tree Structure</h2>
+<p>XML documents are formed as <strong>element trees</strong>.</p>
+<p>An XML tree starts at a <strong>root element</strong> and branches from the 
+root to <strong>child elements</strong>.</p>
+<p>All elements can have sub elements (child elements):</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>root<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>child<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+  &nbsp;&nbsp;&nbsp;
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>subchild<span class="tagcolor" style="color:mediumblue">&gt;</span></span>.....<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/subchild<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/child<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/root<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+</div></div>
+
+<p>The terms parent, child, and sibling are used to describe the relationships between 
+elements.</p>
+<p>Parents have children. Children have parents. Siblings are children on the same level (brothers 
+and sisters).</p>
+<p>All elements can have text content (Harry Potter) and attributes (category="cooking").</p>
+
+<hr>
+
+<h2>Self-Describing Syntax</h2>
+<p>XML uses a much self-describing syntax.</p>
+<p>A prolog defines the XML version and the character encoding:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>?xml<span class="attributecolor" style="color:red"> version<span class="attributevaluecolor" style="color:mediumblue">="1.0"</span> encoding<span class="attributevaluecolor" style="color:mediumblue">="UTF-8<strong>"</strong></span>?</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+</div></div>
+
+<p>The next line is the <b>root element </b>of the document:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>bookstore<span class="tagcolor" style="color:mediumblue">&gt;</span></span>  </div></div>
+
+<p>The next line starts a &lt;book&gt; element:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>book<span class="attributecolor" style="color:red"> category<span class="attributevaluecolor" style="color:mediumblue">="cooking"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>  </div></div>
+
+<p>The &lt;book&gt; elements have <strong>4 child elements</strong>: &lt;title&gt;, &lt;author&gt;, &lt;year&gt;, &lt;price&gt;.</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="attributecolor" style="color:red"> lang<span class="attributevaluecolor" style="color:mediumblue">="en"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Everyday Italian<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>author<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Giada De Laurentiis<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/author<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>year<span class="tagcolor" style="color:mediumblue">&gt;</span></span>2005<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/year<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>price<span class="tagcolor" style="color:mediumblue">&gt;</span></span>30.00<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/price<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+</div>
+</div>
+
+<p>The next line ends the book element:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/book<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+</div></div>
+
+<p>You can assume, from this example, that the XML document contains information 
+about books in a bookstore.</p>
+<br>
+
+<br>
+
+</div>
+</body>
+</html>

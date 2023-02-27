@@ -7,17 +7,70 @@
     <title>Student Presentation: JSON vs XML</title>
     <link href="https://hectapia.github.io/wdd230/styles/small.css" rel="stylesheet">
     <link href="https://hectapia.github.io/wdd230/styles/medium.css" rel="stylesheet">
-
+    <style>
+        ul, #myUL {
+          list-style-type: none;
+        }
+        
+        #myUL {
+          margin: 0;
+          padding: 0;
+        }
+        
+        .caret {
+          cursor: pointer;
+          -webkit-user-select: none; /* Safari 3.1+ */
+          -moz-user-select: none; /* Firefox 2+ */
+          -ms-user-select: none; /* IE 10+ */
+          user-select: none;
+        }
+        
+        .caret::before {
+          content: "\25B6";
+          color: black;
+          display: inline-block;
+          margin-right: 6px;
+        }
+        
+        .caret-down::before {
+          -ms-transform: rotate(90deg); /* IE 9 */
+          -webkit-transform: rotate(90deg); /* Safari */'
+          transform: rotate(90deg);  
+        }
+        
+        .nested {
+          display: none;
+        }
+        
+        .active {
+          display: block;
+        }
+        </style>
 </head>
 <body>
     <header class="shadowbox">
-        <h2>Student Presentation: JSON vs XML</h2>
+        <h2>WDD 230 Student Presentation: JSON vs XML</h2>
     </header>
     <main>
         <ul>  Fundamentals
-            <li><a href="https://hectapia.github.io/wdd230/lesson09/JsonVsXML/jsonfiles/books.json" target="_blank"> XML</a></li>
-            <li><a href="https://hectapia.github.io/wdd230/lesson09/JsonVsXML/jsonfiles/superheroes.json" target="_blank"> JSON</a></li>
-
+            <ul id="myUL">
+                <li><span class="caret">JSON</span>
+                  <ul class="nested">
+                    <li><a href="js_json_intro.html" target="_blank">JSON Introduction</a></li>
+                    <li><a href="js_json_syntax.html" target="_blank">The JSON syntax</a></li>
+                    <li><a href="js_json_xml.html" target="_blank">JSON vs XML</a></li> 
+                  </ul>
+                </li>
+              </ul>
+              <ul id="myUL">
+                <li><span class="caret">XML</span>
+                  <ul class="nested">
+                    <li><a href="xml_whatis.html" target="_blank">Introduction to XML</a></li>
+                    <li><a href="xml_tree.html" target="_blank">XML Tree</a></li>
+                    <li><a href="xml_syntax.html" target="_blank">XML Syntax Rules</a></li> 
+                  </ul>
+                </li>
+              </ul>
         </ul>
         <ul>    Files
             <li><a href="https://hectapia.github.io/wdd230/lesson09/JsonVsXML/jsonfiles/books.json" target="_blank"> books.json</a></li>
@@ -41,5 +94,16 @@
         </div>
       </footer>
     <script src="https://hectapia.github.io/wdd230/scripts/scripting.js"></script>
+    <script>
+        var toggler = document.getElementsByClassName("caret");
+        var i;
+        
+        for (i = 0; i < toggler.length; i++) {
+          toggler[i].addEventListener("click", function() {
+            this.parentElement.querySelector(".nested").classList.toggle("active");
+            this.classList.toggle("caret-down");
+          });
+        }
+        </script>
 </body>
 </html>

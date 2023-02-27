@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML Syntax Rules</title>
+    <link rel="stylesheet" href="styles/w3schools31.css">
+    <meta content="This page shows content that belongs to w3schools just for educational purpose">
+    <style>
+        .credits{
+            position: fixed;
+            bottom: 2px;
+            margin: 0 auto;
+            padding: 10px;
+            width: 60rem;
+            background-color: white;
+            border: 3px solid #73AD21;
+        }
+        .mainheading {
+            margin: 10px; padding: 10px;
+        }
+    </style>
+</head>
+<body>
+  <p class=".nextprev a .w3-left credits" >Taken from <a href="https://www.w3schools.com/xml/xml_syntax.asp" ><em>www.w3schools.com/xml/xml_syntax</em></a></p>           
+  <h1>XML Syntax Rules</h1>
+  
+<hr>
+<p class="intro">The syntax rules of XML are very simple and logical. The rules 
+are easy to learn, and easy to use.</p>
+<hr>
+
+<h2>XML Documents Must Have a Root Element</h2>
+<p>XML documents must contain one <strong>root</strong> element that is the <b>
+parent</b> 
+of all other elements:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>root<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>child<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+  &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>subchild<span class="tagcolor" style="color:mediumblue">&gt;</span></span>.....<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/subchild<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/child<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/root<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<p>In this example <strong>&lt;note&gt;</strong> is the root element:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>?xml<span class="attributecolor" style="color:red"> version<span class="attributevaluecolor" style="color:mediumblue">="1.0"</span> encoding<span class="attributevaluecolor" style="color:mediumblue">="UTF-8<strong>"</strong></span>?</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>note<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>to<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tove<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/to<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>from<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Jani<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/from<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>heading<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Reminder<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/heading<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Don't forget me this weekend!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/note<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+</div></div>
+
+<hr>
+
+<h2>The XML Prolog</h2>
+<p>This line is called the XML <strong>prolog</strong>:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>?xml<span class="attributecolor" style="color:red"> version<span class="attributevaluecolor" style="color:mediumblue">="1.0"</span> encoding<span class="attributevaluecolor" style="color:mediumblue">="UTF-8<strong>"</strong></span>?</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+
+<p>The XML prolog is optional. If it exists, it must come first in the document. </p>
+<p>XML documents can contain international characters, like Norwegian øæå or 
+French êèé.</p>
+<p>To avoid errors, you should specify the encoding used, or save your XML files 
+as UTF-8.</p>
+<p>UTF-8 is the default character encoding for XML documents.</p>
+<p>Character encoding can be studied in our <a href="/charsets/default.asp">
+Character Set Tutorial</a>.</p>
+
+<div class="w3-panel w3-note">
+<p>UTF-8 is also the default encoding for HTML5, CSS, JavaScript, PHP, and SQL.</p>
+</div>
+<hr>
+<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+  <!-- MidContent -->
+  <!-- <p class="adtext">Advertisement</p> -->
+  
+    <div id="adngin-mid_content-0" style="min-width: 970px; min-height: 25px; display: flex; justify-content: space-around; align-items: center; width: 970px; flex-direction: row;">
+        <div id="adngin-mid_content-0-adaptive-group-0-placement-0" data-google-query-id="CJGKs9S9tP0CFfqQ0QQdBhkJGg">
+            <div id="sn_ad_label_adngin-mid_content-0-adaptive-group-0-placement-0" class="sn_ad_label" style="color:#000000;font-size:12px;margin:0;text-align:center;">
+             
+            </div>
+            <div id="google_ads_iframe_/22152718,16833175/sws-hb//w3schools.com//mid_content_0__container__" style="border: 0pt none; display: inline-block; width: 970px; height: 25px;">
+            </div>
+        </div>
+    </div>
+    
+  </div>
+<hr>
+<h2>All XML Elements Must Have a Closing Tag</h2>
+<p>In XML, it is illegal to omit the closing tag. All elements <b>must</b> have 
+a closing tag:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="attributecolor" style="color:red"> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+
+<div class="w3-panel w3-note">
+<p><strong>Note:</strong> The XML prolog does not have a closing tag!
+This is not an error. The prolog is not a part of the XML document.
+</p>
+</div>
+
+<hr>
+
+<h2>XML Tags are Case Sensitive</h2>
+<p>XML tags are case sensitive. The tag &lt;Letter&gt; is different from the tag 
+&lt;letter&gt;.</p>
+<p>Opening and closing tags must be written with the same case:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>message<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is correct<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/message<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+
+<p>"Opening and closing tags" are often referred to as "Start and end tags". Use 
+whatever you prefer. It is exactly the same thing.</p>
+<hr>
+
+<h2>XML Elements Must be Properly Nested</h2>
+<p>In HTML, you might see improperly nested elements:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>b<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>i<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This text is bold and italic<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/b<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/i<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+
+<p>In XML, all elements <b>must</b> be properly nested within each other:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>b<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>i<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This text is bold and italic<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/i<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/b<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+
+<p>In the example above, "Properly nested" simply means that since the &lt;i&gt; 
+element is opened inside the &lt;b&gt; element, it must be closed inside the &lt;b&gt; 
+element.</p>
+<hr>
+
+<h2>XML Attribute Values Must Always be Quoted</h2>
+<p>XML elements can have attributes in name/value pairs just like in HTML.</p>
+<p>In XML, the attribute values must always be quoted:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>note<span class="attributecolor" style="color:red"> date<span class="attributevaluecolor" style="color:mediumblue">="12/11/2007"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>to<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tove<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/to<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>from<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Jani<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/from<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/note<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+
+<hr>
+
+<h2>Entity References</h2>
+<p>Some characters have a special meaning in XML.</p>
+<p>If you place a character like "&lt;" inside an XML element, it will generate an 
+error because the parser interprets it as the start of a new element.</p>
+<p>This will generate an XML error:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate">
+&lt;message&gt;salary &lt; 1000&lt;/message&gt;</div></div>
+
+<p>To avoid this error, replace the "&lt;" character with an <b>entity reference</b>:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>message<span class="tagcolor" style="color:mediumblue">&gt;</span></span>salary <span class="marked">&amp;lt;</span> 1000<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/message<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>  
+
+<p>There are 5 pre-defined entity references in XML:</p>
+<table class="ws-table-all notranslate" style="width:50%">
+<tbody><tr>
+<td>&amp;lt;</td>
+<td>&lt;</td>
+<td>less than</td>
+</tr>
+<tr>
+<td>&amp;gt;</td>
+<td>&gt;</td>
+<td>greater than</td>
+</tr>
+<tr>
+<td>&amp;amp;</td>
+<td>&amp;</td>
+<td>ampersand&nbsp;</td>
+</tr>
+<tr>
+<td>&amp;apos;</td>
+<td>'</td>
+<td>apostrophe</td>
+</tr>
+<tr>
+<td>&amp;quot;</td>
+<td>"</td>
+<td>quotation mark</td>
+</tr></tbody></table>
+
+<div class="w3-panel w3-note">
+<p>Only &lt; and &amp; are strictly illegal in XML, but it is a good habit to replace &gt; 
+with &amp;gt; as well.</p>
+</div>
+<hr>
+
+<h2>Comments in XML</h2>
+<p>The syntax for writing comments in XML is similar to that of HTML:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span class="commentcolor" style="color:green">&lt;!-- This is a comment --&gt;</span> </div>
+</div>
+<p>Two dashes in the middle of a comment are not allowed:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span class="commentcolor" style="color:green">&lt;!-- This is an invalid -- comment --&gt;</span> </div>
+</div>
+<hr>
+
+<h2>White-space is Preserved in XML</h2>
+
+<p>XML does not truncate multiple white-spaces (HTML truncates multiple 
+white-spaces to one single white-space):</p>
+
+<table class="ws-table-all notranslate">
+<tbody><tr>
+<td>
+XML:
+</td>
+<td>Hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Tove
+</td>
+</tr>
+<tr>
+<td>
+HTML:
+</td>
+<td>Hello Tove</td>
+</tr>
+</tbody></table>
+<hr>
+
+<h2>XML Stores New Line as LF</h2>
+<p>Windows applications store a new line as: carriage return and line feed 
+(CR+LF).</p>
+<p>Unix and Mac OSX use LF.</p>
+<p>Old Mac systems use CR.</p>
+<p>XML stores a new line as LF.</p>
+<hr>
+
+<h2>Well Formed XML</h2>
+<p>XML documents that conform to the syntax rules above are said to be "Well 
+Formed" XML documents.</p>
+<br>
+<br>
+
+</div>
+</body>
+</html>
