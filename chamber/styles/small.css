@@ -340,7 +340,7 @@ picture img[data-src] {
     filter: blur(0.3em);
 }
 
-picture p { text-align: justify; padding: 10px;}
+picture p,a { text-align: justify; padding: 10px;}
 
 .discoverContainer .demographic  {
 	margin: auto auto 5px;
@@ -357,7 +357,11 @@ picture p { text-align: justify; padding: 10px;}
 	width: 420px;
 	background-color: rgb(21, 70, 21);
 	color: #fff;
+	opacity: 0.8;
+	transition: 0.3s;
 }
+
+picture:hover { opacity: 1;}
 
 .lazyImg img {
  border: 1px solid #fff;
