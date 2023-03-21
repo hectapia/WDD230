@@ -18,7 +18,7 @@
 		order: 1;
 	}
 	em {
-		font-size: 14px;
+		font-size: 1.0em;
 	}	
 
   .mainHero h2, h3 {
@@ -69,7 +69,7 @@
     display: flex;
     margin: 5px;
     height: 100%;
-    }
+    } 
    .spot-3 > p{
     display: flex;
     color: #fff;
@@ -82,10 +82,29 @@
        grid-column: 1 / 2;
        grid-row: 3 / 4;
      }  
+
+
+  
+    .joinContainer div {
+      flex-direction: row;
+    }
+  
+    .membership {
+      width: 50%;
+    }
+
+    #joinForm {
+      width: 40%;
+    }
+
    .news {
        grid-column: 2 / 4;
        grid-row: 3 / 4;
      }  
+
+
+
+
     .footer-site-name h2 {
       display: flex;
       margin-top: 1px ;
