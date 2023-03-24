@@ -1,0 +1,100 @@
+{
+    "businesses": [
+      {
+        "name": "Dilly Deli",
+        "address": "93 S Main St, \nPleasant Grove, UT 84062",
+        "phone": "(801) 687-9234",
+        "website": "https://dillydeli.com/",
+        "imgfile": "images/DillyDeliLogo.svg",
+        "membship": "Bronze"
+      },
+      {
+        "name": "Thanksgiving Point",
+        "address": "2929 N Thanksgiving Way \nLehi, UT 84043",
+        "phone": "(801) 768-2300",
+        "website": "https://thanksgivingpoint.org/",
+        "imgfile": "images/ThanksgivingPointLogo.svg",
+        "membship": "Gold"
+      },
+      {
+        "name": "Brigham Young University",
+        "address": "150 E 1230 N, \nProvo, UT 84604",
+        "phone": "(801) 422-4636",
+        "website": "https://byu.edu/",
+        "imgfile": "images/BrighamYoungUniversity.svg",
+        "membship": "Non-profit"
+      },
+      {
+        "name": "American Red Cross",
+        "address": "1190 Spring Creek Place , B-1, \nSpringville, UT, 84663",
+        "phone": "(801) 818-1776",
+        "website": "https://redcross.org/local/utah.html",
+        "imgfile": "images/RedCrossLogo.svg",
+        "membship": "Non-profit"
+      },
+      {
+        "name": "Floss Dental",
+        "address": "50 N Main St, \nLindon, UT 84042",
+        "phone": "(801) 698-3384",
+        "website": "https://flossdental.com/",
+        "imgfile": "images/FlossDental.svg",
+        "membship": "Bronze"
+      },
+      {
+        "name": "Scera Center for the Arts",
+        "address": "745 South State Street, \nOrem UT 84058",
+        "phone": "(801) 225-2787",
+        "website": "https://scera.org/",
+        "imgfile": "images/SceraLogo.png",
+        "membship": "Silver"
+      },
+      {
+        "name": "Cross Wrench Auto",
+        "address": "100 W State St, \nAmerican Fork, UT 84003",
+        "phone": "(385) 975-2515",
+        "website": "https://crosswrenchauto.com/",
+        "imgfile": "images/CrossWrenchLogo.svg",
+        "membship": "Bronze"
+      },
+      {
+        "name": "CAG Golf",
+        "address": "2751 E. Sunset Dr, \nEagle Mountain Utah 84005",
+        "phone": "(801) 691-3894",
+        "website": "https://caggolf.com/",
+        "imgfile":"images/CAGLogo.svg",
+        "membship": "Silver"
+      },
+      {
+        "name": "Provo Beach Resort",
+        "address": "4801 N. University Ave., #210, \nProvo UT 84604",
+        "phone": "(801) 224-5001",
+        "website": "https://provobeachresort.com/",
+        "imgfile": "images/ProvoBeachResort.svg",
+        "membship": "Gold"
+      },
+      {
+        "name": "Sundance Mountain Resort",
+        "address": "8841 N. Alpine Loop Rd, \nSundance, UT 84604",
+        "phone": "(801) 225-4107",
+        "website": "https://sundanceresort.com/",
+        "imgfile": "images/SundanceLogo.svg",
+        "membship": "Gold"
+      },
+      {
+        "name": "Utah Valley University",
+        "address": "800 W. University Pkwy. #127, \nOrem, UT 84057",
+        "phone": "(801) 863-8424",
+        "website": "https://uvu.edu/",
+        "imgfile": "images/UVU.svg",
+        "membship": "Non-profit"
+      },
+      {
+        "name": "Math Xpress",
+        "address": "1774 N University Prkwy, \nProvo, UT 84604",
+        "phone": "(801) 123-5813",
+        "website": "https://mathxpress.com/",
+        "imgfile": "images/MathxLogo.svg",
+        "membship": "Bronze"
+      }
+    ]
+}

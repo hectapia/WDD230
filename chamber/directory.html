@@ -29,13 +29,13 @@
           </section>
         </div>
         <div class="change">
-          <div class="menu"> 
+          <div class="menu">
             <nav>
               <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
               <ul id="primaryNav">
-                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="index.html">Home</a></li>
                   <li><a href="discover.html">Discover</a></li>
-                  <li><a href="directory.html">Directory</a></li>
+                  <li class="active"><a href="#"">Directory</a></li>
                   <li><a href="join.html">Join</a></li>    
                   <li><a href="#">Contact</a></li>  
               </ul>
@@ -56,64 +56,21 @@
       </div>
     </header>
     
-    <main>
-      <div class="homeContainer">
-        <div class="home-hero">
-  
-          <div class="mainHero">
-            <picture>
-              <source srcset="images/hero-large.jpg" media="(min-width: 960px)">
-              <source srcset="images/hero-medium.jpg" media="(min-width: 680px) and (max-width: 959px)">
-              <img id="hero-img" src="images/hero-small.jpg" alt="People sitting around a table">
-          </picture>
-           <Div class="h2_hero">
-            <h2>Welcome</h2>
-           </Div>
-           <Div class="h3_hero">
-            <h3>Join the Chamber</h2>
-           </Div>
-          </div>
-          
-          <div class="event">
-            <p>Event</p>
-          </div>
-  
-          <div class="weather">
-            <p>Weather</p>
-            <p><span class="temperature">91.4</span>&#8451;</p>
-            <p>Weather aspect: Cloudy</p>
-            <p>Wind speed: <span class="windSpeed">5.55</span>mi/h</p>
-            <p>Wind chill: <span class="windChill"></span></p>
-          </div>
-  
-          <div class="news">
-            <p>News</p>
-          </div>
-          
-          <div class="spotlights">
-            <div class="spot-1">
-              <p>Spotlight one</p>
-            </div>
-            <div class="spot-2">
-              <p>Spotlight two</p>
-            </div>
-            <div class="spot-3">
-              <p>Spotlight three</p>
-            </div>
-          </div>
-  
-          <div class="join">
-            <p>join us. </p>   
-          </div>
-  
-        </div>
-      </div>
+    <main class="directoryContainer">
+        <div class="menuButtons">
+      	    <button id="grid"><img src="images/grid-image.png" alt="grid-image.png"></button>
+      	    <button id="list"><img src="images/list-image.png" alt="list-image.png"></button>
+ 	      </div>
+        <hr />
+        <article class="grid">
+
+        </article>
     </main>  
     
   <footer>
       <section class="infoChamber">
           <div class="logoFooter">   
-            <img src="images/canacosugarcane.webp" alt="Page logo"/>
+              <img src="images/canacosugarcane.webp" alt="Page logo">
           </div>
           <div class="footer-site-name">   
             <h2>VitaChamCo</h2>
@@ -137,6 +94,5 @@
   </footer>
     
     <script src="scripts/scripting.js"></script>
-    <script src="scripts/windchill.js"></script>
   </body>
 </html>

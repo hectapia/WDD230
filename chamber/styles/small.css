@@ -373,7 +373,7 @@ picture:hover { opacity: 1;}
 
 /* ---- Main Join page ---- */
 
-.joinContainer, .discoverContainer  {
+.joinContainer, .discoverContainer, .directoryContainer  {
 	display: flex;
 	background-color: #fff;
 	padding-top: 5px;
@@ -430,3 +430,95 @@ input, select, textArea {
 	padding: 10px 20px;
 	width: 100%;
 }
+
+
+/* ---- Main discovery page ---- */
+
+
+.menuButtons {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bbb;
+	text-align: center;
+	margin: 10px;
+}
+
+.menuButtons button {
+	font-weight: 700;
+}
+
+article,
+section {
+	margin: 0.5rem;
+}
+
+article section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: rgba(133, 133, 133, 0.219);
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+}
+
+.grid section {
+	flex-direction: column;
+	text-align: center;
+	height: 300px;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.grid h3 {
+	font-family: "Caveat", cursive;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+	max-height: 200px;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: #fff;
+}
+
+section h3 {
+	font-size: 1.5rem;
+}
+
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.9rem;
+}
+
+img {
+	height: 75px;
+	max-width: 100%; /* Images are jerks - Seattle*/
+}
+
