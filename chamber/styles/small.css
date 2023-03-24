@@ -485,7 +485,8 @@ article section {
 
 .list section {
 	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
+	/*grid-template-columns: 2fr 1fr 1fr;*/
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	margin: 0;
 	padding: 0.25rem;
 	max-height: 200px;
@@ -515,6 +516,8 @@ section h3 {
 section a {
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 0.9rem;
+	text-align: center;
+	padding: 1px;
 }
 
 img {

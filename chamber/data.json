@@ -3,7 +3,7 @@
       {
         "name": "TaxiPlus Elite",
         "address": "Juarez Park, \nCentro Villahermosa, TAB 86000",
-        "phone": "(993) 348-4302",
+        "phone": "(993) 348 4302",
         "website": "https://www.facebook.com/photo/?fbid=713613490764846&set=a.128546315938236",
         "imgfile": "images/taxiplus.jpg",
         "membship": "Silver"
@@ -11,7 +11,7 @@
       {
         "name": "IEAT",
         "address": "Vicente Guerrero 304\nCentro Villahermosa, TAB 86000",
-        "phone": "(993) 3 51 04 09",
+        "phone": "(993) 351 0409",
         "website": "http://tabasco.inea.gob.mx/",
         "imgfile": "images/ieat.jpg",
         "membship": "Non-profit"
@@ -35,7 +35,7 @@
       {
         "name": "Fonacot Institute",
         "address": "Benito Juárez No. 118-120, \nCentro Villahermosa, TAB 86077",
-        "phone": "(993) 314 5804 ",
+        "phone": "(993) 314 5804",
         "website": "https://fonacot.online/fonacot-villahermosa/",
         "imgfile": "images/logoif.png",
         "membship": "Non-profit"
@@ -84,7 +84,7 @@
         "name": "YUMKA",
         "address": "Las Barrancas, \nVillahermosa, TAB 86280",
         "phone": "(993) 596 6702",
-        "website": "https://uvu.edu/",
+        "website": "http://yumka.gob.mx/",
         "imgfile": "images/yumka.jfif",
         "membship": "Non-profit"
       },
