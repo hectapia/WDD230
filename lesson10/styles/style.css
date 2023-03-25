@@ -1,0 +1,24 @@
+body {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 40px;
+    font-size: 16px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+main{
+    border: 1px solid #a1a0a0;
+    box-shadow: 5px 10px 8px #a1a0a0;
+    padding: 10px;
+}
+
+h1 {
+    color: #000;
+    border-bottom: 1px solid #cfcfcf;
+    text-shadow: 0 0 15px #6b6a6a;
+  }
+
+figure {
+    margin-left: 0px;
+    color: blue;
+}
