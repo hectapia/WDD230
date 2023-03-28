@@ -43,23 +43,27 @@ header {
 	display: flex;
 	flex-direction: column;
 	margin-left: .5rem;
+	color:rgb(21, 70, 21);
+	text-shadow: 5px 5px 15px black;
 }
 
 .headings h1 {
 	font-size: 1.5rem;
-	color: #02476d;
+	margin: 2px;
 }
 
 .m {
 	letter-spacing: 1pt;
-	color: #02476d;
 	font-weight: 700;
 	font-size: 0.8rem;
+	margin: 2px;
 }
 
 .social {
 	margin-right: 1.5rem;
 }
+
+.social a { padding: 2px;}
 
 .social img {
 	width: 30px;
@@ -80,6 +84,13 @@ header {
 	order: 2;
 }
 
+
+@media only screen and (max-width: 53rem) {
+
+	.social * { display: none;}
+
+}
+
 .banner {
 	border: 1px solid #858585;
 	background-color: forestgreen;
@@ -89,7 +100,8 @@ header {
 }
 .currentdate {
 	border: 1px solid #858585;
-	background-color: rgba(133, 133, 133, 0.219);
+	background-color: rgb(21, 70, 21);
+	color: #fff;
 	text-align:center;
 	margin-left: 5px;
 	margin-top: 10px;
@@ -104,17 +116,18 @@ header {
 
 nav button { 
     margin: 0.2rem;    background: white;
-    border: none;    font-size: 2rem;
-    color: #555; cursor: pointer;
+    border: none;    
+    color: rgb(21,70,21); font-weight: bold; cursor: pointer;
 }
 nav { background-color: transparent;}
 nav ul {  list-style: none;    padding: 0;    margin: 0;}
 
-nav ul li a {background-color: white; border: 1px solid #555;
+nav ul li a {background-color: white; 
     display: block;    padding: 0.4rem 1vw;
-    text-decoration: none;    color: #333;
+    text-decoration: none;    color: rgb(21,70,21); font-weight: bold;
     border-top: 1px solid rgba(0,0,0,0.5); position: relative;
     box-shadow: none;
+	text-shadow: 5px 5px 15px black; font-size: 1rem;
 }
 
 nav ul li .active a {
@@ -129,7 +142,6 @@ nav ul li a:hover {
 nav ul {display: none;}
 
 nav ul.open {display: block;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #hamburgerBtn span:nth-child(1) {display: block;}
@@ -141,6 +153,7 @@ nav ul.open {display: block;
 
 /* ---- Main Home page ---- */
 
+
 main > h3 {
 	margin: 0;
 }
@@ -149,28 +162,22 @@ main > h3+p {
 	margin-top: 0;
 }
 
-.homeContainer {
-	position: relative;
-	margin: 20px auto;
-	background-color: #fff;
-	z-index: -1;
-}
 
-.home-hero {
+.home-grid {
 	display: grid;
 	grid-gap: 5px;
 	grid-auto-rows: minmax(250px, auto);
 }
 
-.home-hero > * {
+.home-grid > * {
 	padding: 10px;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: #333;
+	background-color: rgb(21, 70, 21);
 	color: #fff;
 }
   
-.mainHero {
+.mainHero, .join {
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -179,27 +186,42 @@ main > h3+p {
 .mainHero img {
 	width: 100%;
 	height: 100%;
+	border: 1px solid #fff;
 }
 
 .mainHero h2, h3 {
 	font-size: 1.5rem;
-	color: #02476d;
+	color: rgb(21, 70, 21);
 	margin: 2px;
 }
 .h2_hero {
 	position: absolute;
 	top: 25px;
 	left: 50px;
+	color:  rgb(21,70,21);
+	text-shadow: 5px 5px 10px black;
 }
 
-.h3_hero {
+.h3_hero button{
 	position: absolute;
 	bottom: 25px;
 	right: 50px;
-	background: radial-gradient(#eee, #4567aa);
+	background: radial-gradient(#eee, rgb(21,70,21));
 	border: 1px solid rgba(0,0,0,.1);
 	border-radius: 10px;
 	padding: 1rem;
+	box-shadow: 0 0 30px #333;
+	opacity: 0.8;
+}
+
+.join button{
+	position: absolute;
+	bottom: 15px;
+	right: 50px;
+	background: radial-gradient(rgb(21,70,21),#eee);
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius: 10px;
+	padding: 0.5rem;
 	box-shadow: 0 0 30px #333;
 	opacity: 0.8;
 }
@@ -209,6 +231,37 @@ main > h3+p {
 	background-position: center;
 }
 
+.weather * {
+    margin: 0 auto;
+	padding: 10px;
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	margin: 1px;
+}
+
+.weather hr {
+	padding: 0px;
+}
+
+.wIcon{
+    display: flex;
+    flex-direction: row;
+	text-shadow: 15px 15px 25px #e0dddd;
+}
+
+div #currentTemp {
+	line-height: 50px;
+	font-size: 50px;
+}
+
+.weather .provideBy {
+	display: flex;
+	flex-direction: row;
+}
+.provideBy img{
+	width: 40%;
+}
 .join {
 color: #fff;
 background-position: center;
@@ -232,30 +285,35 @@ margin-top: auto;
 	flex-direction: column;
 }
 
+.title, .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 5px;
+    justify-content: left;
+}
+
+.dot {
+display: none;
+}
+
 .spotlights {
-	background-color: #333;
+	background-color: rgb(21, 70, 21);
 	color: #fff;
 	display: flex;
 	flex-direction: column;
-	height: 100%
+	
 }
 
-.spotlights > div {
-	border: 1px solid white;
-	color: black;
-}
 
-.spot-1,  .spot-2 {
+.spot-1,  .spot-2, .spot-3 {
 	margin: 5px;
-	height: 100%;}
-.spot-1 > p{
-	color: #fff;
-}
+	border: 1px solid white;
+	color: rgb(21, 70, 21);
+	background-color: #fff;
+	}
 
-.spot-2 > p{
-	color: #fff;
-}
-.spot-3 {display: none;}
+	.spot-3 { display: none;}
+
 
 a.hero-button, a.join-button:link {
 	border: 1px solid #ccc;
@@ -266,12 +324,16 @@ a.hero-button, a.join-button:link {
 	display: block;
 	padding: 5px;
 	margin: auto auto 20px;
-	text-align: center;
+	text-align: center; 
 }
 
 a.hero-button { width: 30%;}
 
 a.join-button:link { width: 50%;}
+
+button {
+	cursor: pointer;
+}
 
 
 /* ---- Global footer ---- */
@@ -295,7 +357,9 @@ footer {
 	margin-bottom: 1px;
 	justify-content: center;
 }
- 
+ .footer-site-name {
+	text-shadow: 5px 5px 15px black;
+ }
 .workInfo p {
 	margin-top: 1px ;
 	margin-bottom: 1px;
@@ -340,7 +404,7 @@ picture img[data-src] {
     filter: blur(0.3em);
 }
 
-picture p,a { text-align: justify; padding: 10px;}
+.lazyImg p,a { text-align: justify; padding: 10px;}
 
 .discoverContainer .demographic  {
 	margin: auto auto 5px;
@@ -373,13 +437,13 @@ picture:hover { opacity: 1;}
 
 /* ---- Main Join page ---- */
 
-.joinContainer, .discoverContainer, .directoryContainer  {
+.homeContainer, .joinContainer, .discoverContainer, .directoryContainer  {
 	display: flex;
 	background-color: #fff;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	margin: 4px;
-	margin-top: 5px;
+	margin-left: 4px;
+	margin-right: 4px;
 	border: 1px solid #858585;
 	flex-direction: column;
 	justify-content: center;
@@ -394,7 +458,7 @@ picture:hover { opacity: 1;}
 
 .membership {
 	border: 1px solid #858585;
-	background-color: rgba(133, 133, 133, 0.219);
+	background-color: rgb(21, 70, 21, 0.3);
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-bottom: 20px;
@@ -403,6 +467,14 @@ picture:hover { opacity: 1;}
 	text-align: center;
 }
 
+.membership ul {
+	padding-right: 10px;
+}
+
+.membership hr {
+	height:2px;
+	background-color:rgb(21, 70, 21);
+}
 .membership ul li {
 	list-style-type: none;
 	margin-top: 10px;
@@ -411,7 +483,7 @@ picture:hover { opacity: 1;}
 
 #joinForm {
 	align-self: center;
-	background-color: rgba(133, 133, 133, 0.219);
+	background-color: rgb(21, 70, 21, 0.3);
 	border: 1px solid #858585;
 	padding: 2em;
 	text-align: left;
@@ -432,13 +504,13 @@ input, select, textArea {
 }
 
 
-/* ---- Main discovery page ---- */
+/* ---- Main Directory page ---- */
 
 
 .menuButtons {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
-	background-color: #bbb;
+	background-color: rgb(21, 70, 21);
 	text-align: center;
 	margin: 10px;
 }
@@ -453,9 +525,9 @@ section {
 }
 
 article section {
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid rgb(21, 70, 21, 0.25);
 	padding: 0.5rem;
-	background-color: rgba(133, 133, 133, 0.219);
+	background-color: rgba(133, 133, 133, 0.25);
 }
 
 .grid {
@@ -468,6 +540,7 @@ article section {
 	flex-direction: column;
 	text-align: center;
 	height: 300px;
+	background-color:  rgb(21, 70, 21, 0.3);
 }
 
 .grid section > * {
@@ -485,7 +558,6 @@ article section {
 
 .list section {
 	display: grid;
-	/*grid-template-columns: 2fr 1fr 1fr;*/
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	margin: 0;
 	padding: 0.25rem;
@@ -497,7 +569,7 @@ article section {
 }
 
 .list section img {
-	display: none; /* smaller viewports only */
+	display: none; 
 }
 
 .list section h3 {
@@ -506,7 +578,7 @@ article section {
 }
 
 .list section:nth-child(even) {
-	background-color: #fff;
+	background-color:rgb(21, 70, 21, 0.3);
 }
 
 section h3 {
@@ -520,8 +592,12 @@ section a {
 	padding: 1px;
 }
 
-img {
-	height: 75px;
-	max-width: 100%; /* Images are jerks - Seattle*/
-}
+section img {
+	height: 75px; 
+	max-width: 100%; 
+}	
 
+button img {
+	height: 75px; 
+	max-width: 100%; 
+}

@@ -29,26 +29,23 @@
 	nav ul#primaryNav {
 		display: flex;
 		margin-left: 2vw;
-		border-left: 1px solid rgba(0,0,0,0.3);
 	}
 
 	nav ul li a {
 	   border: none;
-	   border-right: 1px solid rgba(0,0,0,0.3);
 	}
 
 	.mainHero h2, h3 {
 		font-size: 2rem;
-		color: #02476d;
+		color:  rgb(21,70,21);
 	}
+
+	
 }
 
 
-
-
-
 @media only screen and (min-width: 51rem) {
-	.home-hero {
+	.home-grid {
 	  grid-template-columns: 1fr 1fr 1fr;
 	}
 	
@@ -65,9 +62,8 @@
 	.spotlights {
 	  grid-column: 1 / 4;
 	  grid-row: 3 / 4;
-	  display: grid;
 	  grid-template-columns: 50% 50%;
-	  grid-template-rows: 250px;
+	  grid-template-rows: auto;
 	  
 	}
 	.spot-1 {
@@ -91,6 +87,11 @@
 	.weather {
 		grid-column: 3 / 4;
 		grid-row: 5 / 6;
+	}
+
+	.spotlights .gridSpot{
+		display: flex;
+		flex-direction: row;
 	}
 
     footer > section  {

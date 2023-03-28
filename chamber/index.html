@@ -24,8 +24,8 @@
         <div class="logo">
           <img src="images/canacosugarcane.webp" alt="Page logo">
           <section class="headings">
-            <h1>VitaChamCo</h1>
-            <q class="m">Chamber of Commerce</q>
+            <h1>Villahermosa Tabasco</h1>
+            <p class="m">Chamber of Commerce</p>
           </section>
         </div>
         <div class="change">
@@ -37,15 +37,14 @@
                   <li><a href="discover.html">Discover</a></li>
                   <li><a href="directory.html">Directory</a></li>
                   <li><a href="join.html">Join</a></li>    
-                  <li><a href="#">Contact</a></li>  
+                  <li><a href="contact.html">Contact</a></li>  
               </ul>
           </nav>
           </div>
-          <div class="social"> &nbsp;
+          <div class="social">
             <a href="https://facebook.com">
               <img src="images/facebookw.png" alt="facebook page icon"> 
-            </a> &nbsp;
-            <a href="https://linkedin.com">
+            </a><a href="https://linkedin.com">
               <img src="images/linkedinw.png" alt="linkedin page icon">
             </a>
           </div>
@@ -56,58 +55,205 @@
       </div>
     </header>
     
-    <main>
-      <div class="homeContainer">
-        <div class="home-hero">
+    <main class="homeContainer">
+   
+        <div class="home-grid">
   
           <div class="mainHero">
             <picture>
-              <source srcset="images/hero-large.jpg" media="(min-width: 960px)">
-              <source srcset="images/hero-medium.jpg" media="(min-width: 680px) and (max-width: 959px)">
-              <img id="hero-img" src="images/hero-small.jpg" alt="People sitting around a table">
+              <source srcset="images/villahermosa-large-3.jpg" media="(min-width: 960px)">
+              <source srcset="images/villahermosa-medium.jpg" media="(min-width: 680px) and (max-width: 959px)">
+              <img id="hero-img" src="images/villahermosa-small.jpg" alt="People sitting around a table">
           </picture>
-           <Div class="h2_hero">
+           <div class="h2_hero">
             <h2>Welcome</h2>
-           </Div>
-           <Div class="h3_hero">
-            <h3>Join the Chamber</h2>
-           </Div>
+           </div>
+           <div class="h3_hero">
+            <form action="join.html">
+            <button type="submit" formaction="join.html">Join the Chamber</button>
+            </form>
+           </div>
           </div>
           
-          <div class="event">
-            <p>Event</p>
+          <div class="event"> 
+
+            <div class="slideshow-container">
+        
+              <div class="slideshow-innerE">
+                  <h2>Event</h2>
+                <div class="mySlidesE">
+      
+                  <div class="title">1 km of smiles</div>
+                  <br><br>
+                  <div class="text">
+                    Join the 1 km of smiles cause this April 23 from 8:00 a.m. to 3:00 p.m. at 
+                    #ParquelaChoca donate a toy that does not have batteries and is in good condition.
+                    There will be many surprises!
+                    "Generating projects and agreements in favor of established trade"
+                  </div>
+                </div>
+              
+                <div class="mySlidesE">
+              
+                  <div class="title">Esoteric Holistic Expo</div>
+                  <br><br>
+                  <div class="text">
+                      Participate as an exhibitor in the "Esoteric Holistic Expo" save your space at 9933027926
+                      Youth Entrepreneurial Experience
+                      The Vice President of Technological Innovation for the Entrepreneur, Luis Aranda Torres, 
+                      spoke with young people about the experience gained during the years that he has been a 
+                      member of the Board of Directors of the Villahermosa National Chamber of Commerce, 
+                      Services, and Tourism.
+                  </div>          
+              </div>
+              
+                <div class="mySlidesE">
+              
+                  <div class="title">Maria Zamo Maria Zamo</div>
+                  <br><br>
+                  <div class="text">
+                      Maria Zamo and Canaco Servytur Villahermosa invite you to their presentation where they will perform their own songs.
+                      It will be this May 26 at the Foro Laguna del Parque Tomás Garrido at 6:00 p.m.
+                      "Generating projects and agreements in favor of established trade".
+                 </div>          
+              </div>
+              
+                <div class="mySlidesE">
+              
+                  <div class="title">Generating projects and agreements </div>
+                  <br><br>
+                  <div class="text">
+                      Canaco Servytur Villahermosa and #InfonavitTabasco invites taxpayers to present their Infonavit opinion until May 2, learn more at https://bit.ly/3HNXEQT
+                      Generating projects and agreements in favor of established trade            
+                  </div>            
+                </div>
+                
+                <a class="prev" onclick='plusSlides(-1)'></a>
+                <a class="next" onclick='plusSlides(1)'></a>
+      
+                <div style='text-align: center;'>
+                  <span class="dotE" onclick='currentSlide(1)'></span>
+                  <span class="dotE" onclick='currentSlide(2)'></span>
+                  <span class="dotE" onclick='currentSlide(3)'></span>
+                  <span class="dotE" onclick='currentSlide(4)'></span>
+                </div>
+      
+                </div>
+             
+              </div>
+              <br/>            
           </div>
   
           <div class="weather">
-            <p>Weather</p>
-            <p><span class="temperature">91.4</span>&#8451;</p>
-            <p>Weather aspect: Cloudy</p>
-            <p>Wind speed: <span class="windSpeed">5.55</span>mi/h</p>
-            <p>Wind chill: <span class="windChill"></span></p>
+            <h2>Weather</h2>
+            <br>
+            <div class="wIcon">
+              <p id="currentTemp"></p>        
+              <img src="" alt="" id="weatherIcon" /> 
+              
+            </div>
+            <p id="weatherDesc"></p>
+            <hr>
+            <div id="windCondition"></div>
+            <div id="windChill"></div>
+            <div class="provideBy">
+              <p>Powered by </p> <img src="images/logo_white_cropped.png" alt="Powered by OpenWeather">
+            </div>
           </div>
   
           <div class="news">
-            <p>News</p>
+            <div class="slideshow-container">
+        
+              <div class="slideshow-inner">
+                  <h2>News</h2>
+                <div class="mySlides">
+      
+                  <div class="title">Ordinary General Assembly</div>
+                  <br><br>
+                  <div class="text">
+                    The National Chamber of Commerce, Villahermosa held an Ordinary General Assembly, 
+                    where Marco Antonio Gómez Figueroa was elected as the new president of the Board 
+                    of Directors, for the period 2023-2024.
+                    During the Assembly, the new directors also protested, the vice-presidencies, 
+                    commissions and delegations were ratified, as well as the administrative positions 
+                    of the Chamber.
+                  </div>
+                </div>
+              
+                <div class="mySlides">
+              
+                  <div class="title">Youth Entrepreneurial Experience</div>
+                  <br><br>
+                  <div class="text">
+                    The Vice President of Technological Innovation for the Entrepreneur, Luis Aranda Torres, 
+                    spoke with young people about the experience gained during the years that he has been 
+                    a member of the Board of Directors of the Villahermosa National Chamber of 
+                    Commerce, Services, and Tourism.
+                  </div>          
+              </div>
+              
+                <div class="mySlides">
+              
+                  <div class="title">National Union of Social Security Workers</div>
+                  <br><br>
+                  <div class="text">
+                    the president of the Villahermosa Chamber of Commerce, Manuel Antonio Miranda Hernández, 
+                    and the general secretary of the National Union of Social Security Workers (SNTSS) 
+                    Section XXVI; María Evelin Martínez Cortés, to continue with the incorporation 
+                    of more companies that provide benefits to the members.
+                 </div>          
+              </div>
+              
+                <div class="mySlides">
+              
+                  <div class="title">The productive sector in the development of Mexico</div>
+                  <br><br>
+                  <div class="text">
+                    The National Chamber of Commerce of Villahermosa receives the former Secretary 
+                    of Tourism, Enrique de la Madrid Cordero with the talk "The productive sector 
+                    in the development of Mexico."
+                    He highlighted the plurality that the Chamber has, where businessmen listen to 
+                    proposals and determine their coincidences with those who come and present their ideas.           
+                  </div>            
+                </div>
+                
+                <a class="prev" onclick='plusSlides(-1)'></a>
+                <a class="next" onclick='plusSlides(1)'></a>
+      
+                <div style='text-align: center;'>
+                  <span class="dot" onclick='currentSlide(1)'></span>
+                  <span class="dot" onclick='currentSlide(2)'></span>
+                  <span class="dot" onclick='currentSlide(3)'></span>
+                  <span class="dot" onclick='currentSlide(4)'></span>
+                </div>
+      
+                </div>
+             
+              </div>
+              <br/>
           </div>
           
-          <div class="spotlights">
-            <div class="spot-1">
-              <p>Spotlight one</p>
-            </div>
-            <div class="spot-2">
-              <p>Spotlight two</p>
-            </div>
-            <div class="spot-3">
-              <p>Spotlight three</p>
-            </div>
+          <div class="spotlights"> 
+            <article class="gridSpot">
+    
+            </article>
+            
           </div>
   
           <div class="join">
-            <p>join us. </p>   
+            <h2>join us</h2>
+            <p>become a part of a progressive community that is committed to improving 
+              work life balance and community relationships. Discover how to join 
+              our Chamber of Commerce and the benefits available to you!
+            </p>  
+                <div class="h3_hero">
+                  <form action="join.html">
+                  <button type="submit" formaction="join.html">Join the Chamber</button>
+                  </form>
+              </div>
           </div>
   
         </div>
-      </div>
     </main>  
     
   <footer>
@@ -116,8 +262,8 @@
             <img src="images/canacosugarcane.webp" alt="Page logo"/>
           </div>
           <div class="footer-site-name">   
-            <h2>VitaChamCo</h2>
-            <q class="m">Villahermosa Tabasco <br> Chamber of Commerce</q>
+            <h2>Villahermosa Tabasco</h2>
+            <p class="m">Chamber of Commerce</p>
           </div>
           <div class="phone">
               <a href="">info@canacocardenas.org</a>
@@ -138,5 +284,8 @@
     
     <script src="scripts/scripting.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/events.js"></script>
+    <script src="scripts/news.js"></script>
+    <script src="scripts/spotlights.js"></script>
   </body>
 </html>
