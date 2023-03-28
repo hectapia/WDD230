@@ -207,7 +207,7 @@ main > h3+p {
 	bottom: 25px;
 	right: 50px;
 	background: radial-gradient(#eee, rgb(21,70,21));
-	border: 1px solid rgba(0,0,0,.1);
+	border: 1px solid rgba(219, 211, 211, 0.5);
 	border-radius: 10px;
 	padding: 1rem;
 	box-shadow: 0 0 30px #333;
@@ -219,7 +219,7 @@ main > h3+p {
 	bottom: 15px;
 	right: 50px;
 	background: radial-gradient(rgb(21,70,21),#eee);
-	border: 1px solid rgba(0,0,0,.1);
+	border: 1px solid rgba(219, 211, 211, 0.5);
 	border-radius: 10px;
 	padding: 0.5rem;
 	box-shadow: 0 0 30px #333;
