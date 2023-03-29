@@ -21,22 +21,13 @@
 		font-size: 1.0em;
 	}	
 
-  .mainHero h2, h3 {
+  .mainHero h2 {
     font-size: 1.8rem;
-    color:  rgb(21,70,21);
   }
 
-  .mainHero h2 {
-    bottom: 25px;
-    right: 50px;
-    background: radial-gradient(#eee, rgb(21,70,21,0.45));
-    border: 1px solid rgba(0,0,0,.1);
-    border-radius: 10px;
-    padding: 1rem;
-    box-shadow: 0 0 30px #333;
-    opacity: 0.8;
-
-}
+  .mainHero button {
+    font-size: 1.9rem;
+  }
 
 .spot-3 { 
   display: flex;

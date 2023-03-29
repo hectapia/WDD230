@@ -151,6 +151,7 @@ nav ul.open {display: block;
 position: absolute;
 right: 10px;
 box-shadow:5px 15px 20px 5px gray;
+z-index: 1;
 }
 
 #hamburgerBtn span:nth-child(1) {display: block;}
@@ -184,10 +185,9 @@ main > h3+p {
 	background-color: rgb(21, 70, 21);
 	color: #fff;
 }
-  
-.mainHero, .join {
-	background-repeat: no-repeat;
-	background-size: cover;
+
+.mainHero {
+	position: relative;
 }
 
 .mainHero img {
@@ -196,42 +196,40 @@ main > h3+p {
 	border: 1px solid #fff;
 }
 
-.mainHero h2, h3 {
-	font-size: 1.5rem;
-	color: rgb(21, 70, 21);
+.mainHero h2 {
+    font-size: 0.8rem;
 	margin: 2px;
+  }
+
+.mainHero button {
+font-size: 1.0rem;
 }
+
+.h2_hero, .h3_hero {
+	position: absolute;
+}
+
 .h2_hero {
-	position: absolute;
-	top: 25px;
-	left: 50px;
+	top: 1rem;
+	left: 3rem;
+}
+
+.h3_hero{
+	bottom: 1rem;
+	right: 3rem;
+}
+
+.h2_hero, .h3_hero button, .join button {
+	background: radial-gradient(#fff,#eee);
+	border: 1px solid rgba(219, 211, 211, 0.5);
+	border-radius: 10px;
+	padding: 5px;
 	color:  rgb(21,70,21);
-	text-shadow: 5px 5px 10px black;
+	opacity: 0.8;
+	box-shadow: 0 0 30px #333;
 }
 
-.h3_hero button{
-	position: absolute;
-	bottom: 25px;
-	right: 50px;
-	background: radial-gradient(#eee, rgb(21,70,21));
-	border: 1px solid rgba(219, 211, 211, 0.5);
-	border-radius: 10px;
-	padding: 1rem;
-	box-shadow: 0 0 30px #333;
-	opacity: 0.8;
-}
 
-.join button{
-	position: absolute;
-	bottom: 15px;
-	right: 50px;
-	background: radial-gradient(rgb(21,70,21),#eee);
-	border: 1px solid rgba(219, 211, 211, 0.5);
-	border-radius: 10px;
-	padding: 0.5rem;
-	box-shadow: 0 0 30px #333;
-	opacity: 0.8;
-}
 
 .weather {
 	color: #fff;
