@@ -27,6 +27,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	position: relative;
 }
 
 .logo {
@@ -78,6 +79,7 @@ header {
   
 .social {
 	order: 1;
+	
 }
 
 .menu {
@@ -122,10 +124,14 @@ nav button {
 nav { background-color: transparent;}
 nav ul {  list-style: none;    padding: 0;    margin: 0;}
 
-nav ul li a {background-color: white; 
-    display: block;    padding: 0.4rem 1vw;
-    text-decoration: none;    color: rgb(21,70,21); font-weight: bold;
-    border-top: 1px solid rgba(0,0,0,0.5); position: relative;
+nav ul li a {
+	background-color: white; 
+    display: block;    
+	padding: 0.4rem 1vw;
+    text-decoration: none;    
+	color: rgb(21,70,21); font-weight: bold;
+    border-top: 1px solid rgba(0,0,0,0.5); 
+	
     box-shadow: none;
 	text-shadow: 5px 5px 15px black; font-size: 1rem;
 }
@@ -142,6 +148,9 @@ nav ul li a:hover {
 nav ul {display: none;}
 
 nav ul.open {display: block;
+position: absolute;
+right: 10px;
+box-shadow:5px 15px 20px 5px gray;
 }
 
 #hamburgerBtn span:nth-child(1) {display: block;}
@@ -260,7 +269,7 @@ div #currentTemp {
 	flex-direction: row;
 }
 .provideBy img{
-	width: 40%;
+	width: 10rem;
 }
 .join {
 color: #fff;
@@ -304,7 +313,9 @@ display: none;
 	
 }
 
-
+.gridSpot {
+	justify-content: space-around;
+}
 .spot-1,  .spot-2, .spot-3 {
 	margin: 5px;
 	border: 1px solid white;
@@ -312,8 +323,13 @@ display: none;
 	background-color: #fff;
 	}
 
-	.spot-3 { display: none;}
+	.spot-1.spot-2.spot-3 img { 
+	width: 50%;
+	height: 50%;
+	margin: 0 auto;
+}
 
+.spot-3 { display: none;}
 
 a.hero-button, a.join-button:link {
 	border: 1px solid #ccc;
@@ -387,7 +403,6 @@ footer {
     padding: 10px;
 }
 .population {
-    /*border-collapse: collapse;*/
     border-spacing: 0;
 }
 
@@ -412,13 +427,13 @@ picture img[data-src] {
 }
 
 .demographic {
-	width: 420px;
+	width: 22rem;
 	border: 1px solid  rgb(21, 70, 21);
 }
 
 .lazyImg picture {
 	margin: auto auto 5px;
-	width: 420px;
+	width: 22rem;
 	background-color: rgb(21, 70, 21);
 	color: #fff;
 	opacity: 0.85;
@@ -432,6 +447,7 @@ picture:hover { opacity: 1;}
  margin-top: 10px;
  filter: blur(0em);
  transition: filter 0.5s;
+ width: 20rem;
 }
 
 
@@ -448,6 +464,7 @@ picture:hover { opacity: 1;}
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+	
 }
 
 .joinContainer div{
