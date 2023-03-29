@@ -171,7 +171,6 @@ main > h3+p {
 	margin-top: 0;
 }
 
-
 .home-grid {
 	display: grid;
 	grid-gap: 5px;
@@ -187,7 +186,6 @@ main > h3+p {
 }
   
 .mainHero, .join {
-	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
